@@ -73,3 +73,31 @@
             </div>
         </div>
     </section>
+
+        <section class="footer">
+        <!-- Your existing footer code here -->
+    </section>
+
+    <div class="popup" id="successPopup">
+        <h2>Message sent successfully!</h2>
+        <button class="popup-btn" id="backBtn">Back to Packages</button>
+    </div>
+    
+    <script src="../JS/index.js"></script>
+    <script>
+        // JavaScript for popup and back button functionality
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            // Simulate sending data (you can replace this with actual AJAX call)
+            setTimeout(() => {
+                document.getElementById('successPopup').style.display = 'block'; // Show the success popup
+            }, 1000); // Change delay as needed
+        });
+
+        document.getElementById('backBtn').addEventListener('click', function() {
+            window.location.href = '../HTML/package.html'; // Redirect to package.html
+        });
+    </script>
+</body>
+</html>
+
