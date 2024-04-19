@@ -54,3 +54,32 @@
             <a href="package.html" class="btn-back-to-home">Back to Packages</a>
         </div>
     </div>
+
+        <!-- JavaScript for handling popup and validation -->
+    <script>
+        function showRegisterSuccess() {
+            document.getElementById('registerSuccessPopup').style.display = 'block';
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+
+        function validateAndRegister() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Basic validation - check if fields are not empty
+            if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+                alert('Please enter all fields.');
+            } else {
+                // You can add more advanced validation here if needed
+
+                // Show registration success popup if validation passes
+                showRegisterSuccess();
+            }
+        }
+    </script>
+</body>
+</html>
