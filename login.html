@@ -54,3 +54,25 @@
 
         </div>
     </div>
+
+        <!-- JavaScript for handling popup -->
+    <script>
+        function showLoginSuccess() {
+            // Check if username and password fields are not empty
+            let username = document.querySelector('input[type="text"]').value.trim();
+            let password = document.querySelector('input[type="password"]').value.trim();
+            
+            if (username && password) {
+                document.getElementById('loginSuccessPopup').style.display = 'block';
+            } else {
+                alert('Please enter both username and password.');
+            }
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
