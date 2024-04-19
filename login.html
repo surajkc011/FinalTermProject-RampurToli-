@@ -25,3 +25,32 @@
             <div id="search-btn" class="fas fa-search"></div>
         </div>
     </header>
+
+        <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <div class="input-field">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Password">
+            </div>
+            <button onclick="showLoginSuccess()">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p><a href="package.html">Go Back</a></p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for login success -->
+    <div id="loginSuccessPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup('loginSuccessPopup')">&times;</span>
+            <p>Login successful!</p>
+            <a href="package.html" class="btn-back-to-home">Back to Packages</a>
+
+
+        </div>
+    </div>
