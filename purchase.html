@@ -147,3 +147,43 @@
             <button type="submit" class="btn" id="place-order">Place Order</button>
         </form>
     </section>
+
+       <section class="footer">
+        <div class="credit">Created by Rampur Toli | All Rights Reserved!</div>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Placeholder for package name retrieval from the URL
+            const params = new URLSearchParams(window.location.search);
+            const packageName = params.get('package');
+            
+            // Placeholder for confirmation logic
+            document.getElementById('payment-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Validate form fields
+                const nameOnCard = document.getElementById('name-on-card').value;
+                const cardDetails = document.getElementById('card-details').value;
+                const billingAddress = document.getElementById('billing-address').value;
+                const billingCity = document.getElementById('billing-city').value;
+                const billingState = document.getElementById('billing-state').value;
+                const billingZip = document.getElementById('billing-zip').value;
+                const billingCountry = document.getElementById('billing-country').value;
+                
+                if (!nameOnCard || !cardDetails || !billingAddress || !billingCity || !billingState || !billingZip || !billingCountry) {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                // Display success message and/or submit form
+                alert('Package Purchased Successfully!');
+                window.location.href = '../HTML/package.html'; // Redirect to packages page
+
+                // Add AJAX request or form submission logic here
+            });
+        });
+    </script>
+</body>
+</html>
+
