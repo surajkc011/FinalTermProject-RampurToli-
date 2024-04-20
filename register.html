@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <!-- Link your CSS files -->
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/register.css">
-    <!-- Add any other meta tags or external resources here -->
 </head>
 <body>
     <header class="header">
@@ -55,7 +53,6 @@
         </div>
     </div>
 
-        <!-- JavaScript for handling popup and validation -->
     <script>
         function showRegisterSuccess() {
             document.getElementById('registerSuccessPopup').style.display = 'block';
@@ -74,8 +71,6 @@
             if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
                 alert('Please enter all fields.');
             } else {
-                // You can add more advanced validation here if needed
-
                 // Show registration success popup if validation passes
                 showRegisterSuccess();
             }
