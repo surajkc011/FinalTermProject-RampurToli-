@@ -102,3 +102,48 @@
             color: #333;
         }
     </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">RampurTravels</a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/category.html">Adventure</a>
+            <a href="../HTML/package.html">Packages</a>
+            <a href="../HTML/contact.html">Contact Us</a>
+            <a href="../HTML/login.html">Login/Register</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div> 
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+    </header>
+
+    <section class="purchase-section">
+        <h1>Payment details</h1>
+        <form id="payment-form">
+            <label for="payment-method">Payment method</label>
+            <select id="payment-method" name="payment_method">
+                <option value="credit_card">Debit or Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="esewa">eSewa</option>
+                <option value="khalti">Khalti</option>
+            </select>
+            
+            <label for="name-on-card">Name on card</label>
+            <input type="text" id="name-on-card" name="name_on_card" placeholder="John Smith">
+            
+            <label for="card-details">Card details</label>
+            <input type="text" id="card-details" name="card_details" placeholder="XXXX XXXX XXXX XXXX">
+            
+            <label for="billing-address">Billing address</label>
+            <input type="text" id="billing-address" name="billing_address" placeholder="Address 1">
+            <input type="text" id="billing-city" name="billing_city" placeholder="City">
+            <input type="text" id="billing-state" name="billing_state" placeholder="State">
+            <input type="text" id="billing-zip" name="billing_zip" placeholder="ZIP Code">
+            <input type="text" id="billing-country" name="billing_country" placeholder="Country">
+            
+            <button type="submit" class="btn" id="place-order">Place Order</button>
+        </form>
+    </section>
